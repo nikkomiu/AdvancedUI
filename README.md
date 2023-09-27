@@ -1,7 +1,7 @@
 # AdvancedUI
 
 Unreal Engine 5 Advanced UI Editor.
-
+it to start working
 This Unreal Engine Plugin allows setting a custom and persistent UI scale for the editor
 as well as allowing you to disable Slate UI tooltips in the editor (probably only useful for Linux).
 
@@ -47,3 +47,9 @@ git submodule add https://github.com/nikkomiu/AdvancedUI.git Plugins/AdvancedUI
 ```
 
 Afterwards, the next compilation of your project should automatically compile, register and enable the plugin.
+
+## Usage
+
+This plugin has a very simple configuration. Once enabled you can configure it through **Edit** -> **Editor Preferences...** -> **Plugins** -> **Advanced UI**.
+
+![Editor Preferences](./Resources/EditorPreferences.png)
