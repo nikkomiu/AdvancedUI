@@ -48,6 +48,18 @@ git submodule add https://github.com/nikkomiu/AdvancedUI.git Plugins/AdvancedUI
 
 Afterwards, the next compilation of your project should automatically compile, register and enable the plugin.
 
+### Auto-Enable Plugin
+
+Engine installation offers the ability to auto-enable the plugin on your system as opposed to enabling it on a per-project basis. To enable the plugin globally, edit the `AdvancedUI.uplugin` that was **built** and add the `EnabledByDefault` flag with a value of `true`:
+
+```diff
+     "IsBetaVersion": false,
++    "EnabledByDefault": true,
+     "IsExperimentalVersion": false,
+```
+
+It seems like this can't be done before the build of the plugin as the UE build tool doesn't seem to honor that field.
+
 ## Usage
 
 This plugin has a very simple configuration. Once enabled you can configure it through **Edit** -> **Editor Preferences...** -> **Plugins** -> **Advanced UI**.
